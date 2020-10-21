@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+wrapper {
+    gradleVersion = "6.7"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.13.3'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.13.3'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.29'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.29'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'org.hamcrest', name: 'hamcrest', version: '2.1'
+    testImplementation group: 'org.hamcrest', name: 'hamcrest-library', version: '2.1'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.27.0'
+    testImplementation group: 'org.easymock', name: 'easymock', version: '4.0.2'
+    testImplementation group: 'org.jmock', name: 'jmock-junit4', version: '2.11.0'
+    implementation 'junit:junit:4.12'
+}
